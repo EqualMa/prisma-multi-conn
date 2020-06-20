@@ -1,0 +1,21 @@
+{
+  "name": "script",
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/cli": "2.0.0",
+    "ts-node": "8.7.0",
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "gen": "npm run gen1 && npm run gen2",
+    "gen1": "prisma generate --schema prisma/schema1.prisma",
+    "gen2": "prisma generate --schema prisma/schema2.prisma",
+    "dev": "ts-node ./script.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "2.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
