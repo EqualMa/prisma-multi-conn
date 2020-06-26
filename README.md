@@ -1,6 +1,6 @@
 # prisma-multi-conn
 
-issue:
+issue: (Fixed: [#2812](https://github.com/prisma/prisma/issues/2812))
 
 When using multiple prisma clients,
 it will output lots of logs when
